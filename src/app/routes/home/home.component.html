@@ -1,1 +1,18 @@
-<p>home works!</p>
+<div class="calculator px-2">
+    <h2 class="mt-2">Calculadora</h2>
+
+    <input class="form-control mb-3" type="text" [(ngModel)]="screen" />
+
+    <div class="btn-group-vertical" role="buttons" aria-label="Buttons">
+        <div class="mb-2" *ngFor="let line of linesOfButtons">
+            <button class="btn mr-2" *ngFor="let button of line" type="button" (click)="onClickButton(button)"
+                [ngClass]="{
+                'btn-primary': button.type === 'number',
+                'btn-warning': button.type === 'operator', 
+                'btn-grey': button.type === 'signal',
+                'btn-danger': button.type === 'action'}">
+                {{ button.value }}
+            </button>
+        </div>
+    </div>
+</div>
