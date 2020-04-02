@@ -1,0 +1,66 @@
+//colors
+$royal-blue: #335AE5;
+$blueberry: #5478FF;
+$soap: #C5E1EF;
+$azureish-white:#D8DFF4;
+$mustard: #F0B205;
+$onyx: #333644;
+$white: #FFF;
+$grey: #EDEDED;
+$green: #68B216;
+
+.bg-blue {
+  background-color: $royal-blue;
+}
+
+.text-blue {
+  color: $royal-blue;
+}
+
+.bg-light-blue {
+  background-color: $blueberry;
+}
+
+.text-light-blue {
+  color: $blueberry;
+}
+
+.bg-soap {
+  background-color: $soap;
+}
+
+.text-soap {
+  color: $soap;
+}
+
+.bg-azureish {
+  background-color: $azureish-white;
+}
+
+.text-azureish {
+  color: $azureish-white;
+}
+
+.bg-mustard {
+  background-color: $mustard;
+}
+
+.text-mustard {
+  color: $mustard;
+}
+
+.bg-black {
+  background-color: $onyx;
+}
+
+.text-black {
+  color: $onyx;
+}
+
+.bg-green {
+  background-color: $green;
+}
+
+.text-green {
+  color: $green;
+}

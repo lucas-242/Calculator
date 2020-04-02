@@ -1,0 +1,25 @@
+@import './styles/colors.scss';
+
+body {
+    background-color: #EDEDED !important;
+    color: $onyx !important;
+    font-size: 19px;
+}
+
+input, select, textarea {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+    border-color: lightgrey !important;
+    box-shadow: none !important;
+}
+
+a:hover:not(.navbar-brand) {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.btn:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+    outline: 0 none !important;
+}

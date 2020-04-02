@@ -1,0 +1,59 @@
+
+#navbar-t {
+    transition: top 0.3s !important;
+}
+
+//Exibição dos menus de Entrar/Sair
+@media screen and (min-width: 501px) {
+    li.exibition {
+        display: none;
+    }
+}
+
+//Exibição da Logo
+@media screen and (max-width: 435px) {
+    .navbar-brand.exibition {
+        display: none;
+    }
+}
+
+/********************
+Botões de Entrar/Sair
+********************/
+.button {
+    padding: 2px 12px; 
+    border-radius: 100px;
+}
+
+.button:hover, button:focus {
+    outline: none !important;
+    box-shadow: none;    
+}
+
+@media screen and (max-width: 500px) {
+    .btn.exibition {
+        display: none;
+    }
+}
+/********************
+Botões de Entrar/Sair
+********************/
+
+/******************************
+Alteração da cor do Placeholder
+******************************/
+::-webkit-input-placeholder {
+    color: #fff;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #fff;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #fff;  
+}
+:-ms-input-placeholder {  
+    color: #fff;  
+}
+/******************************
+Alteração da cor do Placeholder
+******************************/
