@@ -1,16 +1,19 @@
-<div class="calculator px-2">
-    <h2 class="mt-2">Calculadora</h2>
-
+<div class="calculator px-2 mx-auto">
+    <div>
+        <h2 class="mt-2">Calculadora</h2>
+    </div>
+    
     <input class="form-control mb-3" type="text" [(ngModel)]="screen" />
 
     <div class="btn-group-vertical" role="buttons" aria-label="Buttons">
         <div class="mb-2" *ngFor="let line of linesOfButtons">
-            <button class="btn mr-2" *ngFor="let button of line" type="button" (click)="onClickButton(button)"
+            <button class="btn" *ngFor="let button of line; let i = index" type="button" (click)="onClickButton(button)"
                 [ngClass]="{
                 'btn-primary': button.type === 'number',
                 'btn-warning': button.type === 'operator', 
                 'btn-grey': button.type === 'signal',
-                'btn-danger': button.type === 'action'}">
+                'btn-danger': button.type === 'action',
+                'mr-2': i != 3 }">
                 {{ button.value }}
             </button>
         </div>
