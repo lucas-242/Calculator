@@ -13,6 +13,10 @@ input, select, textarea {
     box-shadow: none !important;
 }
 
+a.card-link {
+    color: inherit !important;
+}
+
 a:hover:not(.navbar-brand) {
     color: inherit !important;
     text-decoration: none !important;

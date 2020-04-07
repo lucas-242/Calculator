@@ -1,21 +1,41 @@
-<div class="calculator px-2 mx-auto">
-    <div>
-        <h2 class="mt-2">Calculadora</h2>
-    </div>
-    
-    <input class="form-control mb-3" type="text" [(ngModel)]="screen" />
-
-    <div class="btn-group-vertical" role="buttons" aria-label="Buttons">
-        <div class="mb-2" *ngFor="let line of linesOfButtons">
-            <button class="btn" *ngFor="let button of line; let i = index" type="button" (click)="onClickButton(button)"
-                [ngClass]="{
-                'btn-primary': button.type === 'number',
-                'btn-warning': button.type === 'operator', 
-                'btn-grey': button.type === 'signal',
-                'btn-danger': button.type === 'action',
-                'mr-2': i != 3 }">
-                {{ button.value }}
-            </button>
+<div class="container">
+    <div class="row">
+        <div class="col-12 d-flex mb-3">
+            <div class="card mx-auto" style="max-width: 690px;">
+                <div class="card-body">
+                    <h5 class="card-title">Lucas Matheus Guimarães</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Desenvolvedor Web - Angular, .NetCore</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a class="card-link" href="https://github.com/lucas-242" target="blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a class="card-link"
+                        href="https://www.linkedin.com/in/lucas-matheus-rocha-guimar%C3%A3es-202250140/" target="blank">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                    <a class="card-link"
+                        href="https://www.linkedin.com/in/lucas-matheus-rocha-guimar%C3%A3es-202250140/" target="blank">
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
+                    <a class="card-link"
+                        href="https://www.linkedin.com/in/lucas-matheus-rocha-guimar%C3%A3es-202250140/" target="blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 d-flex">
+            <div class="card mx-auto" style="max-width: 690px;">
+                <div class="card-body">
+                    <h5 class="card-title">Yuri Vasconcelos</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Desenvolvedor Web - Angular, .NetCore</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a class="card-link" href=""><i class="fa fa-github"></i></a>
+                    <a class="card-link" href=""><i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
