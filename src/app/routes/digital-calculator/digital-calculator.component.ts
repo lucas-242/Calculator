@@ -52,7 +52,7 @@ export class DigitalCalculatorComponent implements OnInit {
         if (this.screen.length > 0) {
           this.lastInput = this.linesOfButtons.find(
             lines => lines.find(buttons => buttons.value == this.screen.substr(this.screen.length - 1)
-            )).find(button => button.value == this.screen.substr(this.screen.length - 1));
+            ) != undefined).find(button => button.value == this.screen.substr(this.screen.length - 1));
           break;
         }
       }
