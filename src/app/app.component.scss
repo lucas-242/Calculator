@@ -27,3 +27,27 @@ a:hover:not(.navbar-brand) {
     box-shadow: none !important;
     outline: 0 none !important;
 }
+
+//Calculator
+.calculator {
+    width: 250px;
+    border: 1px #131314 solid;
+    border-radius: 8px;
+}
+
+.calculator .btn {
+    width: 51.9px;
+}
+
+.calculator .btn-warning {
+    background-color: #FFC100;
+    color: #ffffff;
+}
+
+.calculator .btn-warning:hover {
+    color: #ffffff;
+}
+
+.calculator .btn-grey {
+    background-color: #d4d4d4;
+}

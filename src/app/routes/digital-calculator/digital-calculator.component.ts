@@ -12,11 +12,11 @@ export class DigitalCalculatorComponent implements OnInit {
   //TODO: TROCAR A FUNÇÃO DO BOTÃO %, REVER A FUNÇÃO DE +/-
   //TODO: Verificar se o último digito é um zero dps do operador, e se é um operador dps de operador
 
-  private linesOfButtons = new Array<Array<Button>>();
+  linesOfButtons = new Array<Array<Button>>();
 
-  private screen = "";
+  screen = "";
 
-  private lastInput: Button;
+  lastInput: Button;
 
   constructor() { }
 
