@@ -7,11 +7,6 @@ import { Button } from 'src/app/entities/button';
   styleUrls: ['./digital-calculator.component.scss']
 })
 export class DigitalCalculatorComponent implements OnInit {
-
-
-  //TODO: TROCAR A FUNÇÃO DO BOTÃO %, REVER A FUNÇÃO DE +/-
-  //TODO: Verificar se o último digito é um zero dps do operador, e se é um operador dps de operador
-
   linesOfButtons = new Array<Array<Button>>();
 
   screen = "";
@@ -103,7 +98,6 @@ export class DigitalCalculatorComponent implements OnInit {
     let lastNumber = result[0];
     let index = +result['index'];
 
-    // if (this.screen[index - 1] === undefined || this.screen[index - 1] === '-' || this.screen[index - 1] === '+') {
     let signal = this.screen[index - 1];
     let firstPart = this.screen.substring(0, index - 1);
 
@@ -111,7 +105,6 @@ export class DigitalCalculatorComponent implements OnInit {
 
     let finalString = firstPart + signal + lastNumber;
     this.screen = finalString;
-    // }
   }
 
   setLineButtons() {
